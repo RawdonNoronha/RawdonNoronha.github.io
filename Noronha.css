@@ -3,11 +3,31 @@
     margin: 0;
 }
 
-.menu-icon {
+.icon-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: #f9f9f9 1px solid;
     position: absolute;
-    left: 15px;
-    top: 10px;
+    left:10px;
+    top: 9px;
+    cursor: pointer;
 }
+
+.side-menu{
+    height: -webkit-fill-available;;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-top-right-radius:  40px;
+    border-bottom-right-radius: 40px;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+  }
 
 .video-playback {
     display: block;
@@ -15,6 +35,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+    z-index: -1;
 }
 
 .container {
@@ -24,6 +45,7 @@
     margin: 0.5em;
     border-radius: 20px;
 }
+
 @media only screen and (min-width: 844px) {
     .container{
     background-color: #e3e3e3;
@@ -31,17 +53,14 @@
     width: 98%;
     margin: 0.5em;
     border-radius: 20px;
+    
     }
 }
 
 .profile-pic {
 
     border-radius: 20px;
-}
-
-.video-label {
-    display: block;
-    color: #f9f9f9;
+    image-rendering: crisp-edges;
 }
 
 .top-bar {
@@ -74,8 +93,11 @@
     padding-top: 10px;
     width: 40px;
     height: 40px;
-    box-shadow: 1px 1px 3px #f9f9f9;
+    
+}
 
+.facebook:hover{
+    box-shadow: 1px 1px 3px #f9f9f9;
 }
 
 .facebook .facebook-text {
@@ -96,6 +118,9 @@
     padding-top: 12px;
     width: 38px;
     height: 38px;
+}
+
+.instagram:hover{
     box-shadow: 1px 1px 3px #f9f9f9;
 }
 
@@ -107,7 +132,6 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
 }
 
 .twitter {
@@ -118,6 +142,9 @@
     padding-top: 13px;
     width: 38px;
     height: 38px;
+}
+
+.twitter:hover{
     box-shadow: 1px 1px 3px #f9f9f9;
 }
 
@@ -139,6 +166,9 @@
     padding-top: 10px;
     width: 40px;
     height: 40px;
+}
+
+.linkedin:hover{
     box-shadow: 1px 1px 3px #f9f9f9;
 }
 
