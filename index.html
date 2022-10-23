@@ -15,14 +15,16 @@
 <body>
     <div class="top-bar">
         <div style="display: inline-block;">
-            <img class="menu-icon" width="40px" height="40px" src="menuicon.png">
-            <h1 style="font-family: 'Caveat', cursive; color: #d0dadf; position: absolute; top: 7px; left: 70px">Rawdon
-                Noronha</h1>
+            <input class="icon-button" type="image" src="menuicon.png" alt="" onclick="openMenu()">
+            <h1 style="font-family: 'Caveat', cursive; color: #d0dadf; position: absolute; top: 7px; left: 57px">Rawdon Noronha</h1>
         </div>
+    </div>
+    <div class="side-menu" id="side-menu">
+    
     </div>
     <div class="container" style="display: inline-block;">
         <div style="padding-top: 50px;padding-left: 80px;">
-            <img class="profile-pic" style="display: block;" width="150px" height="150px" src="myphoto.jpg">
+            <img class="profile-pic" style="display: block;" width="150px" height="150px" src="myphoto.jpg" onclick="photodetails()">
         </div>
         <div style="text-align: center;">
             <p>Hi i am rawdon noronha<br>studying in don bosco colledge of enginerring
@@ -36,36 +38,33 @@
         </div>
 
     </div>
-    <div style="margin: 0.5em;">
-        <ul>
-
-        </ul>
-    </div>
-    <br>
-    <div class="video-playback">
+    <div>
         <video class="video-playback" class="background-video" autoplay loop muted>
             <source
                 src="https://assets.contentstack.io/v3/assets/blt370612131b6e0756/bltf354e721b33962fa/5f4df07a99431928ffc0e1b4/Footer_Video_2048x852.mp4"
                 type="video/mp4">
-            <div class="video-label">Footage recorded and edited by <font style="font-family: 'Caveat', cursive;">Rawdon
+            <!--<div class="video-label">Footage recorded and edited by <font style="font-family: 'Caveat', cursive;">Rawdon
                     Noronha</font>
-            </div>
+            </div>-->
         </video>
-
     </div>
-
+    <script>
+        function openMenu(){
+            document.getElementById("side-menu").style.width = "250px";
+        }
+    </script>
     <footer class="footer1">
         <div style="background-color: #061c25;">
             <br>
             <p style="color:#d0dadf;font-family: 'Be Vietnam Pro', sans-serif; font-size: small;">This website is
-                created by <font style="font-family: 'Caveat', cursive;">Rawdon Noronha<br>Inspired by RIOT GAMES</font>
+                created by <font style="font-family: 'Caveat', cursive;">Rawdon Noronha</font>
             </p>
             <br>
         </div>
         <div
             style="background-color: #282928; border-top: 3px solid #343535;font-family: 'Be Vietnam Pro', sans-serif;">
             <br>
-            <p style="color: #f9f9f9;"><b>Under development do follow</b></p>
+            <p style="color: #f9f9f9;"><b>This Website is under development do follow</b></p>
             <br>
         </div>
         <div class="social-media-links">
